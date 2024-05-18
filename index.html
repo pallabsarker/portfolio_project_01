@@ -7,7 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
 </head>
 <body>
   <header>
@@ -19,10 +21,10 @@
           </div>
           <div>
             <a href="#">Home</a>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
-            <a href="#">About</a>
+            <a href="#about-me">About</a>
           </div>
         </div>
         <div class="right">
@@ -45,5 +47,62 @@
       </div>
     </div>
   </header>
+
+  <section class="about" id="about-me">
+    <div class="container flex align-item">
+      <div class="flex-1 flex justify-center">
+        <img class="aboutPhoto " src="./images/pallab_ef.jpg" alt="Candidate Picture">
+      </div>
+
+      <div class="flex-1">
+        <h1>About <span>Me</span></h1>
+        <h3>Hello! My name is Pallab Sarker.</h3>
+        <p>A recent Computer Science and Engineering graduate (B.Sc.) with a strong
+          foundation in web development and database management, eager to leverage my
+          proficiency in HTML, CSS, JavaScript, Java, PHP, and MySQL to contribute to a
+          software engineering team. I possess a keen interest in learning new technologies
+          and possess the adaptability to thrive in a fast-paced environment. My academic
+          projects have honed my ability to problem-solve, collaborate with teams, and adapt to new technologies quickly. With a commitment to continuous learning and a
+          strong work ethic, I am ready to take on new challenges and grow professionally in a dynamic and collaborative environment</p>
+          <div class="socialAccount">
+            <a target="_blank" href="https://www.linkedin.com/"><img src="./images/icons8-linkedin.svg" alt=""></a>
+            <a target="_blank" href="https://web.whatsapp.com/"><img src="./images/icons8-whatsapp.svg" alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="./images/icons8-facebook.svg" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="./images/icons8-instagram.svg" alt=""></a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-services" id="services">
+    <div class="container">
+      <div>
+        <h1 class="section-heading"><span>Our </span>Services</h1>
+        <p>We provide high standard clean and responsive websites for your business solutions</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./images/web-development.svg" alt="">
+            <h2>Web Development</h2>
+            <p>Creating, building, and maintaining websites or web applications by combining technical skills, programming languages, and design elements.</p>
+          </div>
+          <div class="card">
+            <img src="./images/software-development.svg" alt="">
+            <h2>Software Development</h2>
+            <p>Designing, creating, testing, and maintaining different software applications involving various principles and techniques and aiming to create efficient, reliable, and easy-to-use software.</p>
+          </div>
+          <div class="card">
+            <img src="./images/website-design.svg" alt="">
+            <h2>Website Design</h2>
+            <p>The process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.</p>
+          </div>
+          <div class="card">
+            <img src="./images/apps.svg" alt="">
+            <h2>App Development</h2>
+            <p>The process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
