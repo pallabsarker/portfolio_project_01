@@ -5,7 +5,11 @@
   --dark: #2B2B2B;
   --pure: #FFFFFF;
   --gray: #737373;
-  --light: #D9D9D9;
+  --light: #f0f0f0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 *{
@@ -23,7 +27,8 @@ body .btn{
 
 header{
   background: var(--dark);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%); */
+  padding-bottom: 2rem;
 }
 
 header nav .logo img{
@@ -41,7 +46,7 @@ header nav .left a{
   text-decoration: none;
   margin-right: 2rem;
   text-transform: uppercase;
-  transition: all .3s;
+  transition: all .3s ease;
 }
 
 header nav .left a:hover{
@@ -94,4 +99,115 @@ header nav .logo{
   margin-bottom: 1rem;
   /* text-align: justify;
   text-justify: inter-word; */
+}
+
+section.about .aboutPhoto{
+  height: 450px;
+
+}
+
+section{
+  padding: 6rem 0;
+}
+
+section.about h1{
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.about h1 span{
+  color: var(--primary);
+}
+
+section.about h3{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+section.about p{
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+section.about .socialAccount{
+  display: flex;
+}
+
+section.about .socialAccount a img{
+  margin-right: 0.5rem;
+  width: 35px;
+  height: 35px;
+}
+
+section.about .socialAccount a img:hover{
+  width: 40px;
+  height: 40px;
+  transition: all .3s ease;
+}
+
+section.our-services{
+  background: var(--light);
+}
+
+.section-heading{
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+.section-heading + p{
+  text-align: center;
+  margin-bottom: 6rem;
+  color: var(--gray);
+}
+
+.section-heading span{
+  color: var(--primary);
+}
+
+section.our-services .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+}
+
+section.our-services .card-wrapper .card{
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 4rem;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+section.our-services .card-wrapper .card img{
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.our-services .card-wrapper .card h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'lato', sans-serif;
+}
+
+section.our-services .card-wrapper .card p{
+  color: var(--gray);
+  line-height: 1.6;
+  font-family: 'lato', sans-serif;
+}
+
+section.our-services .card-wrapper .card:hover{
+  background: var(--dark);
+}
+
+section.our-services .card-wrapper .card:hover h2, section.our-services .card-wrapper .card:hover p{
+  color: var(--pure);
 }
